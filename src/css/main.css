@@ -1,0 +1,17 @@
+/* base style */
+@import './base/base.css';
+@import './base/typography.css';
+@import './base/animations.css';
+
+/* Variables */
+@import './abstracts/variables.css';
+
+/* layout */
+@import './layout/header.css';
+@import './layout/footer.css';
+
+/* Pages style */
+@import './pages/homepage.css';
+
+/* external styles */
+@import './vendors/vendor.css';
