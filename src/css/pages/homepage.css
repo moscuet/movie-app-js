@@ -1,0 +1,5 @@
+body {
+  background-color: var(--color-primary);
+  width: 100vw;
+  height: 1000px;
+}
