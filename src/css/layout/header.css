@@ -1,0 +1,41 @@
+.header {
+  width: 100vw;
+  position: relative;
+}
+
+.header__logo {
+  position: absolute;
+}
+
+.header__navbar {
+  position: absolute;
+}
+
+.header__movie--container {
+  height: 100%;
+}
+
+.header__movie__img {
+  width: 100%;
+}
+
+.header__movie--content {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.header__movie__title {
+}
+
+.header__movie-cta {
+}
+
+.header__movie__rating--box {
+}
+
+.stars--box {
+}
+
+.header__movie__rating {
+}

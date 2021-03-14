@@ -8,9 +8,14 @@
 
 /* layout */
 @import './layout/header.css';
+@import './layout/content.css';
+@import './layout/cards.css';
 @import './layout/footer.css';
 
-/* Pages style */
+/* Component */
+@import './components/card.css';
+
+/* Pages */
 @import './pages/homepage.css';
 
 /* external styles */

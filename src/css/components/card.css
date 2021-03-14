@@ -1,0 +1,25 @@
+.card {
+  cursor: pointer;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.card__image__container {
+}
+
+.card__img {
+  display: block;
+  width: 100%;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.card__footer {
+  position: relative;
+  padding: var(--gutter-horizontal);
+}
+
+.movie__rating {
+  position: absolute;
+  top: var(--gutter-vertical);
+  right: var(--gutter-horizontal);
+}

@@ -1,3 +1,6 @@
 :root {
-  --color-primary: orangered;
+  --color-primary: #f3f3f3;
+
+  --gutter-vertical: 2rem;
+  --gutter-horizontal: 2rem;
 }
