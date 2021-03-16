@@ -1,4 +1,12 @@
-export const header = ({ title, image, rating, releaseDate, voteCount }) => {
+import { checkRating } from '../utils/checkRating';
+export const header = ({
+  title,
+  image,
+  rating,
+  releaseDate,
+  voteCount,
+  genresString,
+}) => {
   image = image.replace('w500', 'original');
 
   const headerHtmlString = `       
@@ -22,6 +30,8 @@ export const header = ({ title, image, rating, releaseDate, voteCount }) => {
                     <img src=${image} alt="${title} poster" class="header__movie__img" />
                     <div class="header__movie--content">
                         <div class="header__movie__title">${title}</div>
+                        <div class="header__movie__genres">${genresString}</div>
+                        <div class="header__movie__release-date">Released on ${releaseDate}</div>
                         <div class="header__movie-cta">
                             <button type="button" class="button--pink">Watch movie</button>
                             <button type="button" class="button--light">View Info</button>
@@ -30,11 +40,7 @@ export const header = ({ title, image, rating, releaseDate, voteCount }) => {
                         <div class="header__movie__rating--box">
                             <div><span>Rating</span> based on ${voteCount} reviews</div>
                             <div class="stars--box">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+                               ${checkRating(rating)}
                             </div>
                             <div class="header__movie__rating">${rating}</div>
                         </div>

@@ -14,7 +14,7 @@
 
 /* Component */
 @import './components/card.css';
-@import './components/circle-progress-bar.css';
+@import './components/loader';
 
 /* Pages */
 @import './pages/homepage.css';
