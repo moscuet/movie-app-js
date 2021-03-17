@@ -1,0 +1,20 @@
+button {
+  text-transform: uppercase;
+  border-style: none;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+
+.button--dark {
+  color: var(--color-black);
+  background-color: var(--color-yellow);
+  border-style: none;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+
+.button--dark:hover {
+  box-shadow: 0px 0px 10px var(--color-yellow);
+}

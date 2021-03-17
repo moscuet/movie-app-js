@@ -3,6 +3,7 @@ import { header } from './components/header';
 import { content } from './components/content';
 import { footer } from './components/footer';
 import { loader } from './components/loader';
+import { scrollFunction } from './utils/scrollNavbar';
 import { onContentClick } from './utils/onContentClick';
 import {
   fetchTrendingMovies,
@@ -50,6 +51,13 @@ window.addEventListener('load', async function () {
           onContentClick(this, index);
         })
       );
+
+      //2) Navbar scrolling effect
+      const headerNav = document.querySelector('.header__navbar');
+      console.log(headerNav);
+      window.addEventListener('scroll', function () {
+        scrollFunction(headerNav);
+      });
     }, 1500);
   } catch (error) {
     console.log(error);

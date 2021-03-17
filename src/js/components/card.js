@@ -9,8 +9,7 @@ export const card = (movies) => {
                     <img class="movie__img" src=${image} alt="${title} poster" />
                 </div>
                 <div class="movie__footer">
-                    <div class="movie__title">${title}</div>
-                    <div class="movie__rating">${rating}</div>
+                    <div class="movie__title">${title}</div>                    
                     <div class="movie__rating__stars">
                         ${starsRating(rating)}
                     </div>                 
