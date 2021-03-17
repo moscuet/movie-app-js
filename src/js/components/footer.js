@@ -1,12 +1,9 @@
 export const footer = () => {
   const footerHtmlString = `
   <!-- FOOTER START -->
-       <footer class="footer">
-        This is the footer
-        <section>
-        <div class="contain">
+       <footer class="footer">       
         <div class="col">
-          <h1>Lost?</h1>
+          <p>Lost?</p>
         <ul>
           <div class="footer-icons">
             <li><div class="home">
@@ -20,7 +17,7 @@ export const footer = () => {
         </ul>
         </div>
         <div class="col">
-          <h1>Company</h1>
+          <p>Company</p>
           <ul>
             <li>About</li>
             <li>Movies</li>
@@ -29,7 +26,7 @@ export const footer = () => {
           </ul>
         </div>
         <div class="col">
-          <h1>Accounts</h1>
+          <p>Accounts</p>
           <ul>
             <li>About</li>
             <li>Services</li>
@@ -37,14 +34,14 @@ export const footer = () => {
           </ul>
         </div>
         <div class="col">
-          <h1>Support</h1>
+          <p>Support</p>
           <ul>
             <li>Contact us</li>
             <li>Web chat</li>
           </ul>
         </div>
         <div class="col social">
-          <h1>Social</h1>
+          <p>Social</p>
       <ul>
         <li>
           <div class="socialmedia-icons">
@@ -62,18 +59,13 @@ export const footer = () => {
           </ul>
         </div>
         <div class="col">
-          <h1>Copyright</h1>
-          <ul>
-            <li><p id="copyright">&copy; Vanilla Movie 2021</p></li>
-          </ul>
-        </div>
-      <div class="clearfix"></div>
+          <p>COPYRIGHT</p>         
+            <div class="copyright">&copy; Vanilla Movie 2021</div>          
+        </div>      
       </div>
       </div>
   <br>
-  </div>
-  </div>
-  </section> 
+  </div> 
        </footer>
     `;
 
