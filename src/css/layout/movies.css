@@ -1,0 +1,15 @@
+.section--movies.active {
+  display: block;
+}
+
+.section--trending-movies,
+.section--top-rated-movies,
+.section--new-arrival-movies {
+  display: none;
+}
+
+.movies__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: var(--gutter-horizontal);
+}

@@ -1,4 +1,4 @@
-export const checkRating = (rating) => {
+export const starsRating = (rating) => {
   rating = rating / 2;
   const ratingStars = `
     <i class="fas fa-star ${rating >= 1 ? 'active' : ''}"></i>

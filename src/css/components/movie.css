@@ -1,15 +1,18 @@
-.card {
+.movie {
   cursor: pointer;
   border-radius: 0.5rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.card__img__container {
+.movie__img__container {
   border-radius: 0.5rem 0.5rem 0 0;
   overflow: hidden;
 }
 
-.card__img {
+.movie__img {
   display: block;
   width: 100%;
   border-radius: 0.5rem 0.5rem 0 0;
@@ -17,11 +20,11 @@
   transition: all ease-out 4s;
 }
 
-.card:hover .card__img {
+.movie:hover .movie__img {
   transform: scale(1.5);
 }
 
-.card__footer {
+.movie__footer {
   position: relative;
   padding: var(--gutter-horizontal);
 }
@@ -41,6 +44,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.movie__rating__stars {
+  position: absolute;
+  bottom: var(--gutter-vertical);
+  right: var(--gutter-horizontal);
 }
 
 .movie__date {

@@ -1,0 +1,19 @@
+.content__navbar {
+  display: flex;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.content__navbar__item {
+  cursor: pointer;
+  padding: var(--gutter-vertical);
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease-out;
+}
+
+.content__navbar__item.active {
+  border-bottom: 1px solid var(--color-secondary);
+}
+
+.content__navbar__item:hover {
+  border-bottom: 1px solid var(--color-secondary);
+}

@@ -9,12 +9,13 @@
 /* layout */
 @import './layout/header.css';
 @import './layout/content.css';
-@import './layout/cards.css';
+@import './layout/movies.css';
 @import './layout/footer.css';
 
 /* Component */
-@import './components/card.css';
+@import './components/movie.css';
 @import './components/loader';
+@import './components/content-navbar.css';
 
 /* Pages */
 @import './pages/homepage.css';

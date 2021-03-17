@@ -3,6 +3,7 @@ import { header } from './components/header';
 import { content } from './components/content';
 import { footer } from './components/footer';
 import { loader } from './components/loader';
+import { onContentClick } from './utils/onContentClick';
 import {
   fetchTrendingMovies,
   fetchTopRatedMovies,
@@ -38,7 +39,18 @@ window.addEventListener('load', async function () {
   `;
       //replace the loader with the populated data
       root.innerHTML = rootHtmlString;
-    }, 1000);
+
+      //Adding events on DOM elements
+      //1) on content navbar to show the current movie section
+      const contentNavItems = document.querySelectorAll(
+        '.content__navbar__item'
+      );
+      contentNavItems.forEach((navItem, index) =>
+        navItem.addEventListener('click', function () {
+          onContentClick(this, index);
+        })
+      );
+    }, 1500);
   } catch (error) {
     console.log(error);
   }

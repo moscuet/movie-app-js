@@ -1,4 +1,4 @@
-import { checkRating } from '../utils/checkRating';
+import { starsRating } from '../utils/starsRating';
 export const header = ({
   title,
   image,
@@ -40,7 +40,7 @@ export const header = ({
                         <div class="header__movie__rating--box">
                             <div><span>Rating</span> based on ${voteCount} reviews</div>
                             <div class="stars--box">
-                               ${checkRating(rating)}
+                               ${starsRating(rating)}
                             </div>
                             <div class="header__movie__rating">${rating}</div>
                         </div>
