@@ -1,20 +1,50 @@
-button {
+.button {
   text-transform: uppercase;
   border-style: none;
-  border-radius: 5px;
+  border-radius: 0.5rem;
   padding: 1rem 2rem;
   cursor: pointer;
+  font-weight: 500;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
 }
 
 .button--dark {
   color: var(--color-black);
+  text-transform: uppercase;
   background-color: var(--color-yellow);
   border-style: none;
-  border-radius: 5px;
+  border-radius: 0.5rem;
   padding: 1rem 2rem;
+  font-weight: 500;
   cursor: pointer;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
 }
 
 .button--dark:hover {
-  box-shadow: 0px 0px 10px var(--color-yellow);
+  box-shadow: 0px 0px 1rem var(--color-yellow);
+}
+
+.button--light {
+  color: var(--color-white);
+  text-transform: uppercase;
+  background: none;
+  border-style: none;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  font-weight: 500;
+  cursor: pointer;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+.button--light:hover {
+  color: var(--color-yellow);
 }
