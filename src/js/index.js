@@ -4,7 +4,7 @@ import { content } from './components/content';
 import { footer } from './components/footer';
 import { loader } from './components/loader';
 import { scrollFunction } from './utils/scrollNavbar';
-import { onContentClick } from './utils/onContentClick';
+import { onContentNavbarClick } from './utils/onContentNavbarClick';
 import {
   fetchTrendingMovies,
   fetchTopRatedMovies,
@@ -44,17 +44,17 @@ window.addEventListener('load', async function () {
       //Adding events on DOM elements
       //1) on content navbar to show the current movie section
       const contentNavItems = document.querySelectorAll(
-        '.content__navbar__item'
+        '.content__navbar__item:not(:last-child)' /* not the genres section */
       );
+
       contentNavItems.forEach((navItem, index) =>
         navItem.addEventListener('click', function () {
-          onContentClick(this, index);
+          onContentNavbarClick(this, index);
         })
       );
 
       //2) Navbar scrolling effect
       const headerNav = document.querySelector('.header__navbar');
-      console.log(headerNav);
       window.addEventListener('scroll', function () {
         scrollFunction(headerNav);
       });

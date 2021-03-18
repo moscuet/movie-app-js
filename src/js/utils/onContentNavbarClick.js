@@ -1,4 +1,4 @@
-export const onContentClick = (navItem, movieSectionIndex) => {
+export const onContentNavbarClick = (navItem, movieSectionIndex) => {
   //remove class active from all nav Items
   const contentNavItems = document.querySelectorAll('.content__navbar__item');
   contentNavItems.forEach((item) => item.classList.remove('active'));
