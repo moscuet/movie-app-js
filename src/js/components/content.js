@@ -1,6 +1,7 @@
 import { card } from './card';
+import { genresDropdownList } from './genres-list';
 
-export const content = (movies) => {
+export const content = (movies, genres) => {
   try {
     const { trendingMovies, topRatedMovies, arrivalMovies } = movies;
 
@@ -11,6 +12,7 @@ export const content = (movies) => {
               <div class="content__navbar__item active">Trending</div>
               <div class="content__navbar__item">Top Rated</div>
               <div class="content__navbar__item">New Arrivals</div>
+             
             </nav>
             
             <section class="section--movies active section--trending-movies">              

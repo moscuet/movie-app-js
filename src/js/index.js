@@ -36,7 +36,7 @@ window.addEventListener('load', async function () {
     setTimeout(() => {
       rootHtmlString = `      
     ${header(mostPopularMovie)}
-    ${content(movies)}   
+    ${content(movies, genres)}   
     ${footer()}
   `;
       //replace the loader with the populated data
