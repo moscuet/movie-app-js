@@ -1,5 +1,5 @@
 .bg {
-  background-color: rgb(255, 224, 24, 0.5);
+  background-color: var(--color-secondary);
   box-shadow: 0 0 1.5rem var(--color-black);
   transition: background-color 0.2s linear;
 }

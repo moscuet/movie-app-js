@@ -1,62 +1,32 @@
 import { starsRating } from '../utils/starsRating';
 export const header = ({
-  title,
-  image,
-  rating,
-  releaseDate,
-  voteCount,
-  genresString,
+    title,
+    image,
+    rating,
+    releaseDate,
+    voteCount,
+    genresString,
 }) => {
-  image = image.replace('w500', 'original');
+    image = image.replace('w500', 'original');
 
-  const headerHtmlString = `       
+    const headerHtmlString = `       
             <header class="header">
                 <div class="header__navbar">
                     <div class="header__logo">
-                        <a href="#">MOVIEBOX</a>
+                        <a class="header__link" href="#">MOVIEBOX</a>
                     </div>
-                    <div class="header__movie">
-                        <nav class="header__movie--cat">
-                            <ul>
-                                <li>
-                                    <a href="#">Trending</a>
-                                </li>
-                                <li>
-                                <a href="#">Top Rated</a>
-                                </li>
-                                <li>
-                                <a href="#">New Arrivals</a>
-                                </li>
-                                <li class="header__nav--dropdown">
-                                <a href="#">Genre
-                                    <i class="fas fa-chevron-down"></i>
-                                    <ul class="header__dropdown--content">
-                                        <li>
-                                            <a href="#">Genre One</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Genre Two</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Genre Three</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                </a>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="header_button">
+                    <div class="header__button">
                         <div class="header__search">
                             <input type="text" placeholder="What are you looking?" id="header__search--input">
                             <i class="fas fa-search"></i>
                         </div>
-                        <a href="#" class="button button--dark">SIGN UP</a>
+                        <a href="#" class="button button--light header__link">Log In</a>
+                        <a href="#" class="button button--dark header__link signUp">Sign Up</a>
                     </div>
                 </div>
                 <div class="header__movie--container">
                     <div class="header__movie--cover">
-                        <img src=${image} alt="${title} poster" class="header__movie__img" />
+                        <img src=${image} alt="${title} poster" class="header__movie__img"/>
                     </div>
                     <div class="header__movie--content">
                         <div class="header__movie--title--cta">
@@ -88,5 +58,5 @@ export const header = ({
             </header>       
     `;
 
-  return headerHtmlString;
+    return headerHtmlString;
 };
