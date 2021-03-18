@@ -17,6 +17,7 @@
 @import './components/loader';
 @import './components/content-navbar.css';
 @import './components/button.css';
+@import './components/genres.css';
 
 /* Pages */
 @import './pages/homepage.css';

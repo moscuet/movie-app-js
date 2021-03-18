@@ -1,9 +1,7 @@
 export const genresDropdownList = (genres) => {
   const genresArray = genres.map((genreObj) => genreObj.name);
-  console.log(genresArray);
 
-  const genresHtmlString = `
-        <label for="movie-genres">Genres <i class="fas fa-chevron-down"></i></label>
+  const genresHtmlString = `        
         <select class="genres__list--dropdown" name="movie genres" id="movie-genres">
             ${getGenresName(genresArray)}
         </select>    
@@ -12,10 +10,12 @@ export const genresDropdownList = (genres) => {
 };
 
 const getGenresName = (genresArray) => {
-  let genreOptions = '';
+  let genreOptions = `
+    <option id="select__label" class="select__item" selected>Genres</option>
+  `;
   genresArray.forEach((genreName) => {
     genreOptions += `
-    <option value="${genreName}">${genreName}</option>
+    <option class="select__item" value="${genreName}">${genreName}</option>
     `;
   });
   return genreOptions;

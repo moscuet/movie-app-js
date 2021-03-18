@@ -1,9 +1,6 @@
 .movie {
   cursor: pointer;
   box-shadow: 0 0.5rem 1rem var(--color-darkgrey);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   -webkit-transition: all ease-out 1s;
   transition: all ease-out 1s;
   background-color: var(--color-black);
@@ -37,7 +34,7 @@
 }
 
 .movie__genres {
-  margin-bottom: var(--gutter-vertical);
+  margin-bottom: 4rem;
 }
 
 .movie__date {

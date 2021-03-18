@@ -9,4 +9,8 @@
 
   --gutter-vertical: 2rem;
   --gutter-horizontal: 2rem;
+
+  --select-border: #777;
+  --select-focus: blue;
+  --select-arrow: var(--select-border);
 }
