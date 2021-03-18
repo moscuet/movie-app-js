@@ -51,10 +51,6 @@ window.addEventListener('load', async function () {
           onContentClick(this, index);
         })
       );
-<<<<<<< HEAD
-=======
-
->>>>>>> upstream/main
       //2) Navbar scrolling effect
       const headerNav = document.querySelector('.header__navbar');
       console.log(headerNav);
