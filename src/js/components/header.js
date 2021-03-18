@@ -1,15 +1,15 @@
 import { starsRating } from '../utils/starsRating';
 export const header = ({
-    title,
-    image,
-    rating,
-    releaseDate,
-    voteCount,
-    genresString,
+  title,
+  image,
+  rating,
+  releaseDate,
+  voteCount,
+  genresString,
 }) => {
-    image = image.replace('w500', 'original');
+  image = image.replace('w500', 'original');
 
-    const headerHtmlString = `       
+  const headerHtmlString = `       
             <header class="header">
                 <div class="header__navbar">
                     <div class="header__logo">
@@ -17,11 +17,11 @@ export const header = ({
                     </div>
                     <div class="header__button">
                         <div class="header__search">
-                            <input type="text" placeholder="What are you looking?" id="header__search--input">
-                            <i class="fas fa-search"></i>
+                            <input type="text" placeholder="What are you looking?" class="header__search--input">
+                            <i class="fas fa-search header__search-icon"></i>
                         </div>
                         <a href="#" class="button button--light header__link">Log In</a>
-                        <a href="#" class="button button--dark header__link signUp">Sign Up</a>
+                        <a href="#" class="button button--dark header__link">Sign Up</a>
                     </div>
                 </div>
                 <div class="header__movie--container">
@@ -35,9 +35,9 @@ export const header = ({
                             </div>
                             <div class="header__movie__genres">${genresString}</div>
                             <div class="header__movie-cta">
-                                <button type="button" class="button--dark">Watch Trailer</button>
-                                <button type="button" class="button--light">View Info</button>
-                                <button type="button" class="button--light">+ Add to wishlist</button>
+                                <button type="button" class="button button--dark">Watch Trailer</button>
+                                <button type="button" class="button button--light">View Info</button>
+                                <button type="button" class="button button--light">+ Add to wishlist</button>
                             </div>
                         </div>
                         <div class="header__movie__rating--box">
@@ -58,5 +58,5 @@ export const header = ({
             </header>       
     `;
 
-    return headerHtmlString;
+  return headerHtmlString;
 };

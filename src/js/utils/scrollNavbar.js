@@ -3,14 +3,14 @@ export const scrollFunction = (headerNav) => {
     document.body.scrollTop > 100 ||
     document.documentElement.scrollTop > 100
   ) {
-    headerNav.classList.add('bg');
-    document.querySelector('.signUp').style.backgroundColor = '#000';
-    document.querySelector('.signUp').style.color = '#fff';
-    document.getElementById('header__search--input').style.background = 'none';
+    headerNav.classList.add('scroll');
+    headerNav.querySelector('.button--dark').classList.add('scroll');
+    headerNav.querySelector('.header__search--input').classList.add('scroll');
   } else {
-    headerNav.classList.remove('bg');
-    document.querySelector('.signUp').style.backgroundColor = '#ffe018';
-    document.querySelector('.signUp').style.color = '#000';
-    document.getElementById('header__search--input').style.background = 'rgba(0, 0, 0, 0.3)';
+    headerNav.classList.remove('scroll');
+    headerNav.querySelector('.button--dark').classList.remove('scroll');
+    headerNav
+      .querySelector('.header__search--input')
+      .classList.remove('scroll');
   }
 };
