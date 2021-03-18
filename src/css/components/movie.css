@@ -1,6 +1,5 @@
 .movie {
   cursor: pointer;
-  border-radius: 0.5rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: column;
@@ -8,29 +7,19 @@
 }
 
 .movie__img__container {
-  border-radius: 0.5rem 0.5rem 0 0;
   overflow: hidden;
 }
 
 .movie__img {
   display: block;
   width: 100%;
-  border-radius: 0.5rem 0.5rem 0 0;
   -webkit-transition: all ease-out 4s;
   transition: all ease-out 4s;
-}
-
-.movie:hover .movie__img {
-  transform: scale(1.5);
 }
 
 .movie__footer {
   position: relative;
   padding: var(--gutter-horizontal);
-}
-
-.movie__title {
-  width: 80%;
 }
 
 .movie__rating {
@@ -50,6 +39,10 @@
   position: absolute;
   bottom: var(--gutter-vertical);
   right: var(--gutter-horizontal);
+}
+
+.movie__genres {
+  margin-bottom: var(--gutter-vertical);
 }
 
 .movie__date {

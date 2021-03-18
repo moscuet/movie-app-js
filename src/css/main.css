@@ -16,6 +16,7 @@
 @import './components/movie.css';
 @import './components/loader';
 @import './components/content-navbar.css';
+@import './components/button.css';
 
 /* Pages */
 @import './pages/homepage.css';

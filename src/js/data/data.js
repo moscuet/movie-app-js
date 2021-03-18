@@ -137,7 +137,7 @@ export const getGenresString = (movies, genres) => {
             }
           }
         })
-        .join(', ');
+        .join(' - ');
     });
   }
   return movies;

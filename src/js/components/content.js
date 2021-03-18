@@ -13,22 +13,19 @@ export const content = (movies) => {
               <div class="content__navbar__item">New Arrivals</div>
             </nav>
             
-            <section class="section--movies active section--trending-movies">
-              <h2 class="heading heading--sub">Top Trending Movies</h2>
+            <section class="section--movies active section--trending-movies">              
               <div class="movies__container">
                 ${card(trendingMovies)}
               </div>
             </section>
             
-            <section class="section--movies section--top-rated-movies">
-              <h2 class="heading heading--sub">Top Rated Movies</h2>
+            <section class="section--movies section--top-rated-movies">              
               <div class="movies__container">
                 ${card(topRatedMovies)}
               </div>
             </section>
             
-            <section class="section--movies section--new-arrival-movies">
-              <h2 class="heading heading--sub">Arrival Movies</h2>
+            <section class="section--movies section--new-arrival-movies">              
               <div class="movies__container">
                 ${card(arrivalMovies)}
               </div>
