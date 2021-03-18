@@ -212,17 +212,3 @@ header button {
 .header__movie__genres {
   margin-bottom: 2rem;
 }
-
-.bg {
-  background-color: rgb(255, 224, 24, 0.5);
-  box-shadow: 0 0 15px var(--color-black);
-  transition: background-color 200ms linear;
-}
-
-.fa-star {
-  color: var(--color-lightgrey);
-}
-
-.fa-star.active {
-  color: var(--color-yellow);
-}
