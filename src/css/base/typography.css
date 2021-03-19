@@ -22,3 +22,22 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.25em;
 }
+/* Responsive */
+/* Big desktop */
+@media only screen and (min-width: 1200px) {
+  html {
+    font-size: 75%; /*1rem = 12px*/
+  }
+}
+/* Tablet landscape */
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 56.25%; /*1rem = 9px*/
+  }
+}
+/* Tablet portrait */
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+}

@@ -28,6 +28,7 @@
 .movie__footer {
   position: relative;
   padding: var(--gutter-horizontal);
+  justify-self: stretch;
 }
 
 .movie__rating__stars {

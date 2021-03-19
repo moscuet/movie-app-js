@@ -63,8 +63,7 @@ export const footer = () => {
             <div class="copyright">&copy; Vanilla Movie 2021</div>          
         </div>      
       </div>
-      </div>
-  <br>
+      </div>  
   </div> 
        </footer>
     `;
