@@ -3,7 +3,8 @@ import { starsRating } from '../utils/starsRating';
 export const card = (movies) => {
   let cardsHtmlString = '';
   movies.forEach(({ title, image, rating, releaseDate, genresString }) => {
-    cardsHtmlString += `        
+    cardsHtmlString += `    
+        
             <div class="movie">
                 <div class="movie__img__container">
                     <img class="movie__img" src=${image} alt="${title} poster" />
