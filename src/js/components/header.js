@@ -10,7 +10,7 @@ export const header = ({
   image = image.replace('w500', 'original');
 
   const headerHtmlString = `       
-            <header class="header">
+            <header class="header" id="header">
                 <div class="header__navbar">
                     <div class="header__logo">
                         <a class="header__link" href="#">MOVIEBOX</a>
