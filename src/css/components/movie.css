@@ -56,6 +56,8 @@
   position: relative;
   padding: var(--gutter-horizontal);
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .movie__rating__stars {
@@ -71,4 +73,5 @@
 
 .movie__date {
   color: #cccaca;
+  margin-top: auto;
 }
