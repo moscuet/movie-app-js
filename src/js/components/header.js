@@ -10,14 +10,14 @@ export const header = ({
   image = image.replace('w500', 'original');
 
   const headerHtmlString = `       
-            <header class="header">
+            <header class="header" id="header">
                 <div class="header__navbar">
                     <div class="header__logo">
                         <a class="header__link" href="#">MOVIEBOX</a>
                     </div>
                     <div class="header__button">
                         <div class="header__search">
-                            <input type="text" placeholder="What are you looking?" class="header__search--input">
+                            <input type="text" placeholder="Mitä sinä looking for?" class="header__search--input">
                             <i class="fas fa-search header__search-icon"></i>
                         </div>
                         <a href="#" class="button button--light header__link">Log In</a>

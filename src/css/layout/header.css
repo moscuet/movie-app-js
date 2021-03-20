@@ -63,6 +63,7 @@
 }
 
 .header__search--input.scroll {
+  background-color: var(--color-black);
 }
 
 .header__search--input::placeholder {
