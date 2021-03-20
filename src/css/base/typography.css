@@ -1,4 +1,52 @@
+html {
+  font-size: 62.5%; /*1rem = 10px*/
+}
+
 body {
-  font-family: Oswald, sans-serif;
-  font-size: 1.8rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+}
+
+.movie__genres {
+  font-size: 1.2rem;
+}
+
+.footer p {
+  font-size: 1.1rem;
+  line-height: 2rem;
+  padding: 2rem 0rem 0.5rem 0rem;
+  color: var(--color-secondary);
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+}
+
+.footer a {
+  color: inherit;
+}
+
+.footer .col ul li {
+  color: #999999;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* Responsive */
+/* Big desktop */
+@media only screen and (min-width: 1200px) {
+  html {
+    font-size: 75%; /*1rem = 12px*/
+  }
+}
+/* Tablet landscape */
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 56.25%; /*1rem = 9px*/
+  }
+}
+/* Tablet portrait */
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
 }

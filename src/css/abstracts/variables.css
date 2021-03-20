@@ -1,3 +1,16 @@
 :root {
-  --color-primary: orangered;
+  --color-primary: #f3f3f3;
+  --color-secondary: #ffbf00;
+  --color-white: #fff;
+  --color-yellow: #ffe018;
+  --color-black: #000;
+  --color-darkgrey: #403838;
+  --color-lightgrey: #8c8c8c;
+
+  --gutter-vertical: 2rem;
+  --gutter-horizontal: 2rem;
+
+  --select-border: #777;
+  --select-focus: blue;
+  --select-arrow: var(--select-border);
 }

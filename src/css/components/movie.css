@@ -1,0 +1,48 @@
+.movie {
+  cursor: pointer;
+  box-shadow: 0 0.5rem 1rem var(--color-darkgrey);
+  -webkit-transition: all ease-out 1s;
+  transition: all ease-out 1s;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.movie:hover {
+  transform: scale(1.02);
+}
+
+.movie__img__container {
+  overflow: hidden;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.movie__img {
+  display: block;
+  width: 100%;
+  -webkit-transition: all ease-out 4s;
+  transition: all ease-out 4s;
+}
+
+.movie__footer {
+  position: relative;
+  padding: var(--gutter-horizontal);
+  justify-self: stretch;
+}
+
+.movie__rating__stars {
+  position: absolute;
+  bottom: var(--gutter-vertical);
+  right: var(--gutter-horizontal);
+}
+
+.movie__genres {
+  margin-bottom: 4rem;
+}
+
+.movie__date {
+}

@@ -1,0 +1,36 @@
+.select--dropdown {
+}
+
+.genres__list--dropdown {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  -webkit-padding-end: 20px;
+  -moz-padding-end: 20px;
+  -webkit-padding-start: 2px;
+  -moz-padding-start: 2px;
+  background-color: var(--color-secondary);
+  background-image: url(../../assets/img/select-arrow.svg),
+    linear-gradient(to bottom, #ffffff, #ffffff);
+  background-position: 60% center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  font-size: inherit;
+  overflow: hidden;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 1rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+select::-ms-expand {
+  display: none;
+}
