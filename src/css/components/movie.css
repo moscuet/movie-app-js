@@ -5,10 +5,11 @@
   transition: all ease-out 1s;
   background-color: var(--color-black);
   color: var(--color-white);
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
 }
 
 .movie:hover {
@@ -17,8 +18,8 @@
 
 .movie__img__container {
   overflow: hidden;
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
 }
 
 .movie__img {
@@ -28,10 +29,33 @@
   transition: all ease-out 4s;
 }
 
+.movie__card__icon {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 3rem;
+  color: var(--color-yellow);
+}
+
+.moviecard__filled__icon {
+  visibility: hidden;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 3rem;
+  color: var(--color-yellow);
+}
+
+.movie__title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
 .movie__footer {
   position: relative;
   padding: var(--gutter-horizontal);
-  justify-self: stretch;
+  flex-grow: 1;
 }
 
 .movie__rating__stars {
@@ -42,7 +66,9 @@
 
 .movie__genres {
   margin-bottom: 4rem;
+  color: #cccaca;
 }
 
 .movie__date {
+  color: #cccaca;
 }
