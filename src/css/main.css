@@ -24,3 +24,6 @@
 
 /* external styles */
 @import './vendors/vendor.css';
+
+/* wish icon */
+@import './components/wish-list.css'
