@@ -11,10 +11,8 @@ body {
   font-size: 1.2rem;
 }
 
-.footer .col p {
-  margin: 0;
-  padding: 0;
-  font-size: 1.2rem;
+.footer p {
+  font-size: 1.1rem;
   line-height: 2rem;
   padding: 2rem 0rem 0.5rem 0rem;
   color: var(--color-secondary);
@@ -22,6 +20,17 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.25em;
 }
+
+.footer a {
+  color: inherit;
+}
+
+.footer .col ul li {
+  color: #999999;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
 /* Responsive */
 /* Big desktop */
 @media only screen and (min-width: 1200px) {
