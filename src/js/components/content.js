@@ -8,7 +8,7 @@ export const content = (movies, genres) => {
     const contentHtmlString = `  
         <div class="content">
 
-            <nav class="navbar content__navbar">
+            <nav class="content__navbar">
               <div class="content__navbar__item active">Trending</div>
               <div class="content__navbar__item">Top Rated</div>
               <div class="content__navbar__item">New Arrivals</div>
