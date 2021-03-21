@@ -33,5 +33,3 @@ export const card = (movies) => {
 
   return cardsHtmlString;
 };
-
-
