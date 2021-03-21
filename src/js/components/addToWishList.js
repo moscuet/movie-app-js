@@ -1,14 +1,22 @@
 import {favIcon} from '../utils/favIcon'
   export const addToWishList = ({title, image, rating, releaseDate, genresString,wishChoice}) => {
    
-   const changeWishClass = (event) => {
-      
-         event.target.classList.forEach( cl => {
-            (cl ==='active-wish') ? event.target.classList.remove('active-wish') : event.target.classList.add('active-wish')
-          })
-    }
-      window.changeWishClass  = changeWishClass ;
+    const changeWishClass = (event) => {
+      let isClassexist = false
 
+       event.target.classList.forEach( cl => {
+         if(cl ==='active-wish') isClassexist = true
+          
+         if(cl ==='active-wish') isClassexist = true
+        })   
+        if(isClassexist){
+           event.target.classList.remove('active-wish')
+        }
+        else {
+           event.target.classList.add('active-wish')
+        }
+  }
+    window.changeWishClass  = changeWishClass ;
     const onClick = (title, image, rating, releaseDate, genresString) => {
          
        let newWish =  {title, image, rating, releaseDate, genresString}
