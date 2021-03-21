@@ -3,12 +3,11 @@ import { genresDropdownList } from './genres-list';
 
 export const content = (movies, genres) => {
 
+ 
   let moviewish = JSON.parse(localStorage.getItem("wishList")) || []
   const onClickWish = (event) =>{
      moviewish = JSON.parse(localStorage.getItem("wishList")) || []
      document.getElementById("wish__container").innerHTML = ` ${card(moviewish)}`
-    // document.querySelectorAll("#wish__container .movie").forEach( mov => mov.classList.add('active-wish'))
-     //console.log(document.querySelectorAll("#wish__container .movie"))
     }
   window.onclick = onClickWish;
 
