@@ -1,0 +1,60 @@
+/* STYLES SPECIFIC TO FOOTER */
+
+.footer {
+  position: relative;
+}
+
+.footer--top {
+  background-color: #070617;
+  padding: 0 2rem 2rem 2rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer .col ul li {
+  padding: 0.5rem 0rem 0.5rem 0rem;
+  cursor: pointer;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+}
+
+.footer .col ul li:hover {
+  color: var(--color-secondary);
+}
+
+.footer .col:last-child ul li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.footer--bottom p {
+  background-color: #070617ee;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.footer__scroll-to-top {
+  background-color: #1d1c30;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: none;
+  color: var(--color-secondary);
+  position: absolute;
+  top: var(--gutter-vertical);
+  right: var(--gutter-horizontal);
+}
+
+.footer__scroll-to-top a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Tablet landscape */
+@media only screen and (max-width: 768px) {
+}
